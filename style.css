@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins";
+}
+.main {
+    height: 100vh;
+    width: 100%;
+    padding: 15px 0px;
+}
+.card {
+    height: 100%;
+    width: 35%;
+    background-color: #ffffff;
+    margin: 0px auto;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.banner {
+    height: 150px;
+    width: 100%;
+    background-color: rgb(49, 49, 49);
+    position: relative;
+    background-image: url("https://cdn.metatime.com/landing/blog/1686575019blobid0.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.logo {
+    height: 110px;
+    width: 110px;
+    background-color: black;
+    background-image: url("https://i.ibb.co/rdDmVR9/Whats-App-Image-2024-02-06-at-23-52-49-d0db9eaf.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    position: absolute;
+    left: 38%;
+    top: 10%;
+    border: 2px solid #ffffff;
+}
+a {
+    text-decoration: none;
+}
+.icons i {
+    font-size: 30px;
+    padding: 10px;
+    border-radius: 50%;
+}
+.icons .one , .four {
+    color: #000000;
+    background-color: #ffffff;
+    border:1px solid #000000 ;
+    transition: 0.2s;
+}
+.icons .one:hover {
+    color: #ffffff;
+    background-color: #000000;
+}
+
+.icons .two {
+    color: #0B66C2;
+    background-color: #ffffff;
+    transition: 0.2s;
+    border:1px solid #0B66C2 ;
+}
+.icons .two:hover {
+    color: #ffffff;
+    background-color: #0B66C2;
+}
+.icons .three {
+    color: #DB2777;
+    background-color: #ffffff;
+    border:1px solid #DB2777 ;
+    transition: 0.2s;
+}
+.icons .three:hover {
+    color: #ffffff;
+    background-color: #DB2777;
+}
+
+.emailBox{
+    height: 32%;
+    width: 97%;
+    margin: 0px auto;
+    border-radius: 10px;
+    background: linear-gradient(to left,#EE55E5,#55EEF9);
+}
+.email{
+    color: #333333;
+    font-size: 22px;
+    text-decoration: underline;
+}
+.loader{
+    height: 100vh;
+    width: 100vw;
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name: loader;
+    animation-duration: 3s;
+    flex-direction: column;
+    top: -110%;
+}
+.loader h3 {
+    background: linear-gradient(to left,#EE55E5,#55EEF9);
+    display: inline;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 30px;
+    animation-name: text;
+    animation-duration: 3s;
+    opacity: 0;
+}
+@keyframes text {
+    0% {
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes loader {
+    0% {
+        top: 0%;
+        background-color: #000000;
+    }
+  
+    90% {
+        top: 0%;
+        background-color: #000000;
+    }
+    100% {
+        top: -110%;
+        background-color: transparent;
+    }
+}
+
+
+
+@media (max-width:600px) {
+
+    .card {
+        width: 100%;
+        margin: 0px auto;
+    }
+ 
+    .main {
+        padding: 0px 0px;
+    }
+}
